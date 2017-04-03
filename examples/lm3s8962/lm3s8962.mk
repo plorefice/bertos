@@ -37,27 +37,27 @@ lm3s8962_CSRC = \
 	bertos/kern/proc_test.c \
 	bertos/kern/proc.c \
 	bertos/kern/signal.c \
-	bertos/cpu/cortex-m3/drv/gpio_lm3s.c \
-	bertos/cpu/cortex-m3/drv/clock_lm3s.c \
-	bertos/cpu/cortex-m3/drv/ser_lm3s.c \
-	bertos/cpu/cortex-m3/drv/kdebug_lm3s.c \
-	bertos/cpu/cortex-m3/drv/ssi_lm3s.c \
-	bertos/cpu/cortex-m3/drv/timer_cm3.c \
-	bertos/cpu/cortex-m3/drv/irq_cm3.c \
-	bertos/cpu/cortex-m3/hw/switch_ctx_cm3.c \
-	bertos/cpu/cortex-m3/hw/init_cm3.c
+	bertos/cpu/cortex-m/drv/gpio_lm3s.c \
+	bertos/cpu/cortex-m/drv/clock_lm3s.c \
+	bertos/cpu/cortex-m/drv/ser_lm3s.c \
+	bertos/cpu/cortex-m/drv/kdebug_lm3s.c \
+	bertos/cpu/cortex-m/drv/ssi_lm3s.c \
+	bertos/cpu/cortex-m/drv/timer_cm3.c \
+	bertos/cpu/cortex-m/drv/irq_cm3.c \
+	bertos/cpu/cortex-m/hw/switch_ctx_cm3.c \
+	bertos/cpu/cortex-m/hw/init_cm3.c
 
 lm3s8962_CPPASRC = \
-	bertos/cpu/cortex-m3/hw/vectors_cm3.S \
-	bertos/cpu/cortex-m3/hw/crt_cm3.S \
+	bertos/cpu/cortex-m/hw/vectors_cm3.S \
+	bertos/cpu/cortex-m/hw/crt_cm3.S \
 	#
 
 # This is an hosted application
 lm3s8962_PREFIX = arm-none-eabi-
 
 lm3s8962_CPPAFLAGS = -mthumb -mno-thumb-interwork
-lm3s8962_CPPFLAGS = -D'ARCH=0' -D__ARM_LM3S8962__ -D'CPU_FREQ=(50000000L)' -D'WIZ_AUTOGEN' -mthumb -mno-thumb-interwork -Iexamples/lm3s8962 -Ibertos/cpu/cortex-m3 -fno-strict-aliasing -fwrapv
-lm3s8962_LDFLAGS = -nostartfiles -T bertos/cpu/cortex-m3/scripts/lm3s8962_rom.ld -Wl,--no-warn-mismatch -mthumb -mno-thumb-interwork
+lm3s8962_CPPFLAGS = -D'ARCH=0' -D__ARM_LM3S8962__ -D'CPU_FREQ=(50000000L)' -D'WIZ_AUTOGEN' -mthumb -mno-thumb-interwork -Iexamples/lm3s8962 -Ibertos/cpu/cortex-m -fno-strict-aliasing -fwrapv
+lm3s8962_LDFLAGS = -nostartfiles -T bertos/cpu/cortex-m/scripts/lm3s8962_rom.ld -Wl,--no-warn-mismatch -mthumb -mno-thumb-interwork
 
 lm3s8962_CPU = cortex-m3
 

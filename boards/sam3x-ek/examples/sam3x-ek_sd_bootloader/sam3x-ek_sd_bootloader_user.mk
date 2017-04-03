@@ -10,9 +10,9 @@ sam3x-ek_sd_bootloader_PROGRAMMER_PORT = none
 # Files included by the user.
 sam3x-ek_sd_bootloader_USER_CSRC = \
 	$(sam3x-ek_sd_bootloader_SRC_PATH)/main.c \
-	bertos/cpu/cortex-m3/drv/dmac_sam3.c \
-	bertos/cpu/cortex-m3/drv/hsmci_sam3.c \
-	bertos/cpu/cortex-m3/io/sam3_chipid.c \
+	bertos/cpu/cortex-m/drv/dmac_sam3.c \
+	bertos/cpu/cortex-m/drv/hsmci_sam3.c \
+	bertos/cpu/cortex-m/io/sam3_chipid.c \
 	#
 
 # Files included by the user.

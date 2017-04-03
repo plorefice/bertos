@@ -11,10 +11,10 @@ sam3x-ek_codec_PROGRAMMER_PORT = none
 sam3x-ek_codec_USER_CSRC = \
 	$(sam3x-ek_codec_SRC_PATH)/main.c \
 	$(sam3x-ek_codec_SRC_PATH)/bitmaps.c \
-	bertos/cpu/cortex-m3/drv/hsmci_sam3.c \
+	bertos/cpu/cortex-m/drv/hsmci_sam3.c \
 	bertos/icons/logo.c \
 	bertos/fonts/gohu.c \
-	bertos/cpu/cortex-m3/drv/dmac_sam3.c \
+	bertos/cpu/cortex-m/drv/dmac_sam3.c \
 	#
 
 # Files included by the user.

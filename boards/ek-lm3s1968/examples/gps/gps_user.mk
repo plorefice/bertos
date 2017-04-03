@@ -14,7 +14,7 @@ gps_PROGRAMMER_PORT = none
 
 # Files included by the user.
 gps_USER_CSRC = \
-	bertos/cpu/cortex-m3/drv/ssi_lm3s.c \
+	bertos/cpu/cortex-m/drv/ssi_lm3s.c \
 	bertos/fonts/gohu.c \
 	bertos/fonts/luBS14.c \
 	bertos/gui/menu.c \

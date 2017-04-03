@@ -11,9 +11,9 @@ sam3x-ek_http_server_PROGRAMMER_PORT = none
 sam3x-ek_http_server_USER_CSRC = \
 	$(sam3x-ek_http_server_SRC_PATH)/main.c \
 	$(sam3x-ek_http_server_SRC_PATH)/bitmaps.c \
-	bertos/cpu/cortex-m3/drv/dmac_sam3.c \
-	bertos/cpu/cortex-m3/drv/hsmci_sam3.c \
-	bertos/cpu/cortex-m3/io/sam3_chipid.c \
+	bertos/cpu/cortex-m/drv/dmac_sam3.c \
+	bertos/cpu/cortex-m/drv/hsmci_sam3.c \
+	bertos/cpu/cortex-m/io/sam3_chipid.c \
 	#
 
 # Files included by the user.

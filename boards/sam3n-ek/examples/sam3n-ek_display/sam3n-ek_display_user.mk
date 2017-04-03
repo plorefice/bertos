@@ -13,7 +13,7 @@ sam3n-ek_display_USER_CSRC = \
 	$(sam3n-ek_display_SRC_PATH)/bitmaps.c \
 	bertos/icons/logo.c \
 	bertos/fonts/gohu.c \
-	bertos/cpu/cortex-m3/drv/spi_dma_sam3.c \
+	bertos/cpu/cortex-m/drv/spi_dma_sam3.c \
 	#
 
 # Files included by the user.

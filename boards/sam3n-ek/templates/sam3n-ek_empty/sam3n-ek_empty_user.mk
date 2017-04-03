@@ -10,7 +10,7 @@ sam3n-ek_empty_PROGRAMMER_PORT = none
 # Files included by the user.
 sam3n-ek_empty_USER_CSRC = \
 	$(sam3n-ek_empty_SRC_PATH)/main.c \
-	bertos/cpu/cortex-m3/drv/spi_dma_sam3.c \
+	bertos/cpu/cortex-m/drv/spi_dma_sam3.c \
 	#
 
 # Files included by the user.

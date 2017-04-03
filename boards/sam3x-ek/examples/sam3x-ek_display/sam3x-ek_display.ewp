@@ -292,7 +292,7 @@
           <state>$PROJ_DIR$\</state>
           <state>$PROJ_DIR$\..\..\</state>
           <state>$PROJ_DIR$\..\..\..\..\bertos</state>
-          <state>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3</state>
+          <state>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -681,7 +681,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>Z:\IAR\bertos_sam3x_trunk\bertos\cpu\cortex-m3\scripts\sam3x8_rom.icf</state>
+          <state>Z:\IAR\bertos_sam3x_trunk\bertos\cpu\cortex-m\scripts\sam3x8_rom.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -1762,64 +1762,64 @@
         <group>
           <name>drv</name>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\adc_cm3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\adc_cm3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_cm3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_cm3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_sam3.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_sam3.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_sam3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_sam3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\eth_sam3.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\eth_sam3.c</name>
             <excluded>
               <configuration>Debug</configuration>
             </excluded>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\eth_sam3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\eth_sam3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\flash_cm3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\flash_cm3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\i2c_cm3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\i2c_cm3.h</name>
           </file>
           <file>
             <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\drv\irq_cm3.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\irq_cm3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\irq_cm3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_cm3.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_cm3.c</name>
             <excluded>
               <configuration>Debug</configuration>
             </excluded>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_sam3.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_sam3.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\ser_cm3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\ser_cm3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\ser_sam3.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\ser_sam3.c</name>
             <excluded>
               <configuration>Debug</configuration>
             </excluded>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\ser_sam3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\ser_sam3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\timer_cm3.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\timer_cm3.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\timer_cm3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\timer_cm3.h</name>
           </file>
         </group>
         <group>
@@ -1846,62 +1846,62 @@
         <group>
           <name>io</name>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\cm3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\cm3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_adc.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_adc.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_emac.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_emac.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_flash.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_flash.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_ints.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_ints.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_nvic.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_nvic.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_pio.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_pio.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_pmc.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_pmc.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_rstc.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_rstc.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_sdramc.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_sdramc.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_smc.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_smc.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_spi.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_spi.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_sysctl.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_sysctl.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_uart.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_uart.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_usart.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_usart.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_wdt.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_wdt.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3x.h</name>
+            <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3x.h</name>
           </file>
         </group>
         <file>
-          <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\adc_sam3.c</name>
+          <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\adc_sam3.c</name>
         </file>
       </group>
     </group>

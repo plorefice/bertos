@@ -51,5 +51,5 @@ MEMORY
 	ram(rwx) : org = 0x20000000, len = 4k
 }
 
-INCLUDE "bertos/cpu/cortex-m3/scripts/cortex-m3_ram.ld"
+INCLUDE "bertos/cpu/cortex-m/scripts/cortex-m3_ram.ld"
 

@@ -37,7 +37,7 @@
         </option>
         <option>
           <name>MacFile</name>
-          <state>..\..\..\..\bertos\cpu\cortex-m3\scripts\sam3x_ek_rom.mac</state>
+          <state>..\..\..\..\bertos\cpu\cortex-m\scripts\sam3x_ek_rom.mac</state>
         </option>
         <option>
           <name>MemOverride</name>

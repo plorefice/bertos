@@ -61,9 +61,9 @@ MK_CPU = CORE_CPU
 CPU_TAGS = ["cm3"]
 
 # Where are locate the bertos directories
-SCRIPT_DIR = CPU_DIR + "cortex-m3/scripts/"
-HW_DIR = CPU_DIR + "cortex-m3/hw/"
-DRV_DIR = CPU_DIR + "cortex-m3/drv/"
+SCRIPT_DIR = CPU_DIR + "cortex-m/scripts/"
+HW_DIR = CPU_DIR + "cortex-m/hw/"
+DRV_DIR = CPU_DIR + "cortex-m/drv/"
 
 MK_STOPFLASH_SCRIPT = PRG_SCRIPTS_DIR + "arm/stopopenocd.sh"
 MK_DEBUG_SCRIPT = PRG_SCRIPTS_DIR + "arm/debug.sh"
@@ -73,7 +73,7 @@ GDB_INIT_SCRIPT = PRG_SCRIPTS_DIR + "arm/openocd/gdbinit-sam7"
 
 # Common GCC flags.
 MK_CPU_CPPAFLAGS = "-g -gdwarf-2 -mthumb -mno-thumb-interwork"
-MK_CPU_CPPFLAGS = "-O0 -g3 -gdwarf-2 -mthumb -mno-thumb-interwork -fno-strict-aliasing -fwrapv -fverbose-asm -I" + CPU_DIR + "cortex-m3/"
+MK_CPU_CPPFLAGS = "-O0 -g3 -gdwarf-2 -mthumb -mno-thumb-interwork -fno-strict-aliasing -fwrapv -fverbose-asm -I" + CPU_DIR + "cortex-m/"
 MK_CPU_LDFLAGS = "-mthumb -mno-thumb-interwork -nostartfiles -Wl,--no-warn-mismatch"
 
 # CRT files.

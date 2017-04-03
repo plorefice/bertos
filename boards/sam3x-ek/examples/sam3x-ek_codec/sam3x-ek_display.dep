@@ -16,7 +16,7 @@
       <file>$PROJ_DIR$\..\..\..\..\bertos\io\kfile.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\icons\logo.h</file>
       <file>$PROJ_DIR$\..\..\hw\hw_sdram.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_tc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_tc.h</file>
       <file>$PROJ_DIR$\Debug\Obj\kdebug.pbi</file>
       <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
       <file>$PROJ_DIR$\cfg\cfg_debug.h</file>
@@ -41,7 +41,7 @@
       <file>$PROJ_DIR$\Debug\Obj\kbd.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
       <file>$PROJ_DIR$\Debug\Exe\display.out</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_dacc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_dacc.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cfg\os.h</file>
       <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
       <file>$PROJ_DIR$\Debug\Obj\text_format.pbi</file>
@@ -78,8 +78,8 @@
       <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
       <file>$PROJ_DIR$\Debug\Obj\init_cm3.o</file>
       <file>$PROJ_DIR$\Debug\Obj\sam3x-ek_display.pbd</file>
-      <file>$PROJ_DIR$\..\..\..\..\..\bertos_sam3x_trunk\bertos\cpu\cortex-m3\scripts\sam3x8_rom.icf</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\adc_sam3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\bertos_sam3x_trunk\bertos\cpu\cortex-m\scripts\sam3x8_rom.icf</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\adc_sam3.c</file>
       <file>$PROJ_DIR$\Debug\Obj\line.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\formatwr.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\luBS14.pbi</file>
@@ -156,12 +156,12 @@
       <file>$PROJ_DIR$\..\..\..\sam3n-ek\examples\display\bitmaps.c</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\fonts\gohu.c</file>
       <file>$PROJ_DIR$\main.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_spi.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_sysctl.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_uart.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3x.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_usart.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_wdt.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_spi.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_sysctl.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_uart.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3x.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_usart.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_wdt.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\drv\adc.c</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\drv\adc.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\drv\kbd.c</file>
@@ -182,40 +182,40 @@
       <file>$PROJ_DIR$\..\..\..\..\bertos\gui\menu.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\kern\coop.c</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\kern\irq.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\adc_cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\adc_cm3.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cfg\module.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\switch_ctx_cm3.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\init_cm3.c</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\vectors_cm3_iar.S</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_adc.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\cm3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_emac.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_flash.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_ints.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_nvic.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_pio.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_pmc.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_rstc.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_sdramc.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\io\sam3_smc.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_cm3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_sam3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_adc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_emac.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_flash.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_ints.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_nvic.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_pio.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_pmc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_rstc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_sdramc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\io\sam3_smc.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_sam3.c</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cfg\macros.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_sam3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\eth_sam3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\eth_sam3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\flash_cm3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\i2c_cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_sam3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\eth_sam3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\eth_sam3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\flash_cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\i2c_cm3.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\drv\irq_cm3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\irq_cm3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_cm3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_sam3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\ser_cm3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\ser_sam3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\ser_sam3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\timer_cm3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\timer_cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\irq_cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_cm3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_sam3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\ser_cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\ser_sam3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\ser_sam3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\timer_cm3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\timer_cm3.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\crt_cm3_iar.S</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\switch_ctx_cm3.c</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\iar_cm3.S</file>
@@ -228,7 +228,7 @@
       <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\hw\hw_cpufreq.h</file>
       <file>$PROJ_DIR$\Debug\Obj\adc_sam3.pbi</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\adc_sam3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\adc_sam3.h</file>
       <file>$PROJ_DIR$\cfg\cfg_adc.h</file>
       <file>$PROJ_DIR$\logo.c</file>
       <file>$PROJ_DIR$\logo.h</file>
@@ -261,7 +261,7 @@
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\adc_sam3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\adc_sam3.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
@@ -812,7 +812,7 @@
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_sam3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_sam3.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
@@ -858,7 +858,7 @@
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_sam3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_sam3.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
@@ -881,7 +881,7 @@
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\timer_cm3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\timer_cm3.c</name>
       <outputs>
         <tool>
           <name>ICCARM</name>
@@ -1001,15 +1001,15 @@
       <tool>ICCARM</tool>
     </forcedrebuild>
     <forcedrebuild>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\eth_sam3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\eth_sam3.c</name>
       <tool>ICCARM</tool>
     </forcedrebuild>
     <forcedrebuild>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_cm3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_cm3.c</name>
       <tool>ICCARM</tool>
     </forcedrebuild>
     <forcedrebuild>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\ser_sam3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\ser_sam3.c</name>
       <tool>ICCARM</tool>
     </forcedrebuild>
   </configuration>
@@ -1110,17 +1110,17 @@
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\switch_ctx_cm3.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\init_cm3.c</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\vectors_cm3_iar.S</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_sam3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_sam3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\eth_sam3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\eth_sam3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_sam3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_sam3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\eth_sam3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\eth_sam3.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\drv\irq_cm3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\irq_cm3.h</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_cm3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_sam3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\ser_sam3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\timer_cm3.c</file>
-      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\timer_cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\irq_cm3.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_cm3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_sam3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\ser_sam3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\timer_cm3.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\timer_cm3.h</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\crt_cm3_iar.S</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\switch_ctx_cm3.c</file>
       <file>$PROJ_DIR$\..\..\..\..\bertos\cpu\CORTEX-M3\hw\iar_cm3.S</file>
@@ -1543,7 +1543,7 @@
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\clock_sam3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\clock_sam3.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
@@ -1562,7 +1562,7 @@
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\eth_sam3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\eth_sam3.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
@@ -1596,7 +1596,7 @@
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_cm3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_cm3.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
@@ -1605,7 +1605,7 @@
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\kdebug_sam3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\kdebug_sam3.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
@@ -1614,7 +1614,7 @@
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\ser_sam3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\ser_sam3.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
@@ -1623,7 +1623,7 @@
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m3\drv\timer_cm3.c</name>
+      <name>$PROJ_DIR$\..\..\..\..\bertos\cpu\cortex-m\drv\timer_cm3.c</name>
       <outputs>
         <tool>
           <name>BICOMP</name>
