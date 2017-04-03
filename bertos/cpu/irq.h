@@ -63,8 +63,8 @@
 		#define IRQ_RESTORE(x)          FIXME
 	#endif /* OS_EMBEDDED */
 
-#elif CPU_CM3
-	/* Cortex-M3 */
+#elif CPU_CM3 || CPU_CM4
+	/* Cortex-Mx */
 
 	/*
 	 * Interrupt priority.

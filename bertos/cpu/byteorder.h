@@ -54,7 +54,7 @@
  * On Cortex-M3, GCC 4.4 builtin implementation is slower than our own
  * rot-based implementation.
  */
-#if GNUC_PREREQ(4, 3) && !CPU_CM3
+#if GNUC_PREREQ(4, 3) && !(CPU_CM3 || CPU_CM4)
 #define SWAB32(x) ((uint32_t)(__builtin_bswap32((x) + \
 		STATIC_ASSERT_EXPR(sizeof(x) == sizeof(uint32_t)))))
 #else

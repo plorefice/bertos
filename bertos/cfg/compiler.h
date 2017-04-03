@@ -116,7 +116,7 @@
 
 	#define MEMORY_BARRIER		asm("")
 
-	#if CPU_ARM || CPU_CM3
+	#if CPU_ARM || CPU_CM3 || CPU_CM4
 
 		#define COMPILER_VARIADIC_MACROS 1
 
@@ -222,7 +222,7 @@
 	#define MUST_CHECK              __attribute__((warn_unused_result))
 	#define PACKED                  __attribute__((packed))
 	#define ALIGNED(x)              __attribute__ ((__aligned__(x)))
-	#if CPU_ARM | CPU_CM3
+	#if CPU_ARM || CPU_CM3 || CPU_CM4
 		#define NAKED		__attribute__((naked))
 	#else
 		#define NAKED
@@ -511,7 +511,7 @@ typedef struct Signal
 	#if CPU_X86
 		/* 32bit or 64bit (32bit for _WIN64). */
 		typedef long ssize_t;
-	#elif CPU_ARM || CPU_CM3
+	#elif CPU_ARM || CPU_CM3 || CPU_CM4
 		typedef int ssize_t;
 	#elif CPU_AVR || CPU_MSP430
 		/* 16bit (missing in avr-/msp430-libc's sys/types.h). */

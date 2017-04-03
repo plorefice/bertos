@@ -380,6 +380,32 @@
 	#define CPU_CM3_SAM3X8 0
 #endif
 
+#if defined(__ARM_ARCH_7EM__) /* GCC */
+	/* Cortex-M4 */
+	#define CPU_CM4 1
+	#define CPU_ID	cm4
+	#define CPU_CORE_NAME "Cortex-M4"
+
+	#if defined (__ARM_STM32F407VG__)
+		#define CPU_CM4_STM32       1
+		#define CPU_CM4_STM32F407VG 1
+		#define CPU_CM4_STM32F4     1
+		#define CPU_NAME            "STM32F407VG"
+	#else
+		#define CPU_CM4_STM32F407VG 0
+		#define CPU_CM4_STM32F4     0
+	#endif
+
+	#if CPU_CM4_STM32 + 0 /* Add other Cortex-M4 families here */ != 1
+		#error Cortex-M4 CPU configuration error
+	#endif
+
+#else
+	#define CPU_CM4_STM32 0
+	#define CPU_CM4_STM32F4 0
+	#define CPU_CM4_STM32F407VG 0
+#endif
+
 #if (defined(__IAR_SYSTEMS_ICC__) || defined(__IAR_SYSTEMS_ICC)) \
 	&& !defined(__ICCARM__) /* IAR: if not ARM assume I196 */
 	#warning Assuming CPU is I196
@@ -682,11 +708,11 @@
 
 
 /* Self-check for the detection: only one CPU must be detected */
-#if CPU_ARM + CPU_CM3 + CPU_I196 + CPU_X86 + CPU_PPC + CPU_DSP56K + CPU_AVR + CPU_MSP430 == 0
+#if CPU_ARM + CPU_CM3 + CPU_CM4 + CPU_I196 + CPU_X86 + CPU_PPC + CPU_DSP56K + CPU_AVR + CPU_MSP430 == 0
 	#error Unknown CPU
 #elif !defined(CPU_ID)
 	#error CPU_ID not defined
-#elif CPU_ARM + CPU_CM3 + CPU_I196 + CPU_X86 + CPU_PPC + CPU_DSP56K + CPU_AVR + CPU_MSP430 != 1
+#elif CPU_ARM + CPU_CM3 + CPU_CM4 + CPU_I196 + CPU_X86 + CPU_PPC + CPU_DSP56K + CPU_AVR + CPU_MSP430 != 1
 	#error Internal CPU configuration error
 #endif
 

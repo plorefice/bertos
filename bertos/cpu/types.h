@@ -78,7 +78,7 @@
 		#define SIZEOF_CPUALIGNED_T SIZEOF_CPUSTACK_T
 	#endif
 
-#elif CPU_ARM || CPU_CM3
+#elif CPU_ARM || CPU_CM3 || CPU_CM4
 
 	typedef uint32_t cpu_flags_t;
 	typedef uint32_t cpu_atomic_t;

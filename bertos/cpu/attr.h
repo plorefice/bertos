@@ -207,6 +207,37 @@
 	#define RAM_FUNC __attribute__((section(".ramfunc")))
     #endif
 
+#elif CPU_CM4
+
+	#define CPU_REG_BITS           32
+	#define CPU_REGS_CNT           16
+	#define CPU_HARVARD            0
+
+	/// Valid pointers should be >= than this value (used for debug)
+	#if (CPU_CM4_STM32)
+		#define CPU_RAM_START 0x20000000
+	#else
+		#warning Fix CPU_RAM_START address for your Cortex-M4, default value set to 0x20000000
+		#define CPU_RAM_START 0x20000000
+	#endif
+
+	#if defined(__ARMEB__) // GCC
+		#define CPU_BYTE_ORDER CPU_BIG_ENDIAN
+	#elif defined(__ARMEL__) // GCC
+		#define CPU_BYTE_ORDER CPU_LITTLE_ENDIAN
+	#else
+		#error Unable to detect Cortex-M4 endianess!
+	#endif
+
+	#define NOP         asm volatile ("nop")
+	#define PAUSE       asm volatile ("wfi" ::: "memory")
+	#define BREAKPOINT  /* asm("bkpt 0") DOES NOT WORK */
+
+	/*
+	 * Function attribute to move it into ram memory.
+	 */
+	#define RAM_FUNC __attribute__((section(".ramfunc")))
+
 #elif CPU_PPC
 
 	#define CPU_REG_BITS           (CPU_PPC32 ? 32 : 64)

@@ -71,7 +71,7 @@
 	#define CPU_STACK_GROWS_UPWARD 0
 	#define CPU_SP_ON_EMPTY_SLOT   0
 
-#elif CPU_CM3
+#elif CPU_CM3 || CPU_CM4
 
 	#define CPU_SAVED_REGS_CNT     8
 	#define CPU_STACK_GROWS_UPWARD 0
@@ -169,10 +169,10 @@
 			CPU_PUSH_WORD((sp), 0x100); \
 		} while (0);
 
-#elif CPU_CM3
+#elif CPU_CM3 || CPU_CM4
 
 	#if CONFIG_KERN_PREEMPT
-		INLINE void cm3_preempt_switch_context(cpu_stack_t **new_sp, cpu_stack_t **old_sp)
+		INLINE void cmx_preempt_switch_context(cpu_stack_t **new_sp, cpu_stack_t **old_sp)
 		{
 			register cpu_stack_t **__new_sp asm ("r0") = new_sp;
 			register cpu_stack_t **__old_sp asm ("r1") = old_sp;
@@ -180,7 +180,7 @@
 			asm volatile ("svc #0"
 				: : "r"(__new_sp), "r"(__old_sp) : "memory", "cc");
 		}
-		#define asm_switch_context cm3_preempt_switch_context
+		#define asm_switch_context cmx_preempt_switch_context
 
 		#define CPU_CREATE_NEW_STACK(stack) \
 			do { \
