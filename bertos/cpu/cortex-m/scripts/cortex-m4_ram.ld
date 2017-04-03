@@ -26,14 +26,15 @@
  * invalidate any other reasons why the executable file might be covered by
  * the GNU General Public License.
  *
- * Copyright 2010 Develer S.r.l. (http://www.develer.com/)
+ * Copyright 2008 Develer S.r.l. (http://www.develer.com/)
  *
  * -->
  *
- * \brief Script Cortex M3 family processors.
+ * \author Pietro Lorefice <pietro@develer.com>
  *
- * \author Daniele Basile <asterix@develer.com>
+ * \brief Script for Cortex M4 family processors.
+ *
  */
 
-INCLUDE "bertos/cpu/cortex-m/scripts/cortex-m_rom.ld"
+INCLUDE "bertos/cpu/cortex-m/scripts/cortex-m_ram.ld"
 

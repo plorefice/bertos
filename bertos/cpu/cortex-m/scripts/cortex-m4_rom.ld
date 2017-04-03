@@ -32,7 +32,7 @@
  *
  * \brief Script Cortex M3 family processors.
  *
- * \author Daniele Basile <asterix@develer.com>
+ * \author Pietro Lorefice <pietro@develer.com>
  */
 
 INCLUDE "bertos/cpu/cortex-m/scripts/cortex-m_rom.ld"

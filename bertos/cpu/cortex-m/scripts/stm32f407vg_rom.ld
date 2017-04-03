@@ -30,10 +30,25 @@
  *
  * -->
  *
- * \brief Script Cortex M3 family processors.
+ * \author Pietro Lorefice <pietro@develer.com>
  *
- * \author Daniele Basile <asterix@develer.com>
+ * \brief Script for STM32F4DISCOVERY Cortex-M4 board.
+ *
  */
 
-INCLUDE "bertos/cpu/cortex-m/scripts/cortex-m_rom.ld"
+/*
+ * Define stack size here
+ * Variable used in the cortex-m4_rom.ld file
+ */
+STACK_SIZE = 0x1000;
+/*
+ * Define memory configuration for STM32F407VG
+ */
+MEMORY
+{
+	rom(rx) : org = 0x08000000, len = 1024k
+	ram(rwx) : org = 0x20000000, len = 192k
+}
+
+INCLUDE "bertos/cpu/cortex-m/scripts/cortex-m4_rom.ld"
 
