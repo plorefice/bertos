@@ -80,7 +80,7 @@
 		#define GPIO_USART3_RING_PIN	BV(15)
 	#endif
 
-#elif CPU_CM3_STM32F207IG
+#elif CPU_CM3_STM32F207IG || CPU_CM4_STM32F407VG
 	// nothing
 #else
 	#error No USART pins are defined for select cpu
@@ -97,7 +97,7 @@
 	#define GPIO_I2C2_SCL_PIN	BV(10)
 	#define GPIO_I2C2_SDA_PIN	BV(11)
 
-#elif CPU_CM3_STM32F207IG
+#elif CPU_CM3_STM32F207IG || CPU_CM4_STM32F407VG
 	// nothing
 #else
 	#error No i2c pins are defined for select cpu
@@ -107,7 +107,7 @@
 		CPU_CM3_STM32F100RB || CPU_CM3_STM32F100C4 || CPU_CM3_STM32F102C4
 
 	#define FLASH_PAGE_SIZE   1024
-#elif CPU_CM3_STM32F207IG
+#elif CPU_CM3_STM32F207IG || CPU_CM4_STM32F407VG
 	/* this does not match real (variable) sector size */
 	#define FLASH_PAGE_SIZE_BYTES   1024
 #else
