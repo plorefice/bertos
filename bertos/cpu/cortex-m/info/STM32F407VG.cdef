@@ -32,28 +32,37 @@
 #
 # -->
 #
-# General CPU info definition for Cortex-M3-based boards.
+# General CPU info denfinition for Cortex-M4-based STM32F4DISCOVERY board.
 #
 # This file contain all info for the BeRTOS wizard.
 #
-# \author Andrea Righi <arighi@develer.com>
+# \author Pietro Lorefice <pietro@develer.com>
 #
 #
 
 # Import the common settings for the path.
-include("cm.common")
+include("cm4.common")
 
-# Short description of the cpu.
-CPU_DESC = ["ARM Cortex-M3",
-	  "ARMv7-M Thumb-2 ISA",
-	  "16-bit and 32-bit RISC Architecture"]
+# CPU type used for flashing/debugging
+MK_PROGRAMMER_CPU = "stm32"
+MK_FLASH_SCRIPT = PRG_SCRIPTS_DIR + "arm/flash-stm32.sh"
 
-# If we use the GCC compiler we should pass some flags.
-CORE_CPU = "cortex-m3"
+# CPU default clock frequency
+CPU_DEFAULT_FREQ = "168000000UL"
 
 # Special CPU related tags.
-CPU_TAGS = ["cm3"]
+CPU_TAGS += ["stm32"]
 
-# CRT files.
-MK_CPU_CPPASRC = HW_DIR + "crt_cm3.S " + HW_DIR + "vectors_cm3.S "
-MK_CPU_CSRC = HW_DIR + "init_cm3.c " + DRV_DIR + "irq_cm3.c "
+# Additional hw drivers.
+MK_CPU_CSRC += DRV_DIR + "gpio_stm32.c " + DRV_DIR + "clock_stm32.c "
+
+# Short description of the cpu.
+CPU_DESC += [ "1 Mbyte on-chip flash memory",
+	      "192 Kbytes on-chip SRAM memory",
+	      "4 UARTs interfaces",
+	      "3 I2C interfaces",
+	      "3 ADC 24 channel 12-bit" ]
+
+# GCC flags for this cpu.
+MK_CPU_CPPFLAGS += " -D__ARM_STM32F407VG__"
+MK_CPU_LDFLAGS += " -Wl,-dT " + SCRIPT_DIR + "stm32f407vg_rom.ld"

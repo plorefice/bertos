@@ -32,11 +32,11 @@
 #
 # -->
 #
-# General CPU info definition for Cortex-M3-based boards.
+# General CPU info definition for Cortex-M4-based boards.
 #
 # This file contain all info for the BeRTOS wizard.
 #
-# \author Andrea Righi <arighi@develer.com>
+# \author Pietro Lorefice <pietro@develer.com>
 #
 #
 
@@ -44,16 +44,18 @@
 include("cm.common")
 
 # Short description of the cpu.
-CPU_DESC = ["ARM Cortex-M3",
-	  "ARMv7-M Thumb-2 ISA",
-	  "16-bit and 32-bit RISC Architecture"]
+CPU_DESC = ["ARM Cortex-M4",
+	  "ARMv7-EM Thumb-2 ISA",
+	  "16-bit and 32-bit RISC Architecture",
+	  "Optional floating-point unit",
+	  "Optional DSP extensions"]
 
 # If we use the GCC compiler we should pass some flags.
-CORE_CPU = "cortex-m3"
+CORE_CPU = "cortex-m4"
 
 # Special CPU related tags.
-CPU_TAGS = ["cm3"]
+CPU_TAGS = ["cm4"]
 
 # CRT files.
-MK_CPU_CPPASRC = HW_DIR + "crt_cm3.S " + HW_DIR + "vectors_cm3.S "
-MK_CPU_CSRC = HW_DIR + "init_cm3.c " + DRV_DIR + "irq_cm3.c "
+MK_CPU_CPPASRC = HW_DIR + "crt_cm4.S " + HW_DIR + "vectors_cm4.S "
+MK_CPU_CSRC = HW_DIR + "init_cm4.c " + DRV_DIR + "irq_cm4.c "
